@@ -1,26 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import RenderInput from "./Core/Components/Input/RenderInput";
 
 class App extends Component {
+  changeField = (value) =>{
+    console.warn('value', value);
+  };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <RenderInput
+            type={"login"}
+            placeholder={"Логин"}
+            width={500}
+            margin = {20}
+            error={false}
+            onChange={(value) => {this.changeField( value)}}
+        />
     );
   }
 }
