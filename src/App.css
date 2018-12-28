@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+.main{
+  width: 900px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  margin: 50px;
+}

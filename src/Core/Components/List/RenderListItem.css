@@ -1,0 +1,50 @@
+.normal {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    border-radius: 5px;
+    margin: 15px 20px;
+    align-items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.normal:hover {
+    background-color: #ccffcc;
+}
+
+.small_image {
+    height: 43px;
+    width: 47px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background: url("./../../KIT/paw.png") no-repeat center;
+}
+
+.block {
+    margin-left: 10px;
+}
+
+.id {
+    composes: block;
+    color: #505743;
+}
+
+.type {
+    composes: block;
+    text-decoration: underline;
+}
+
+.manufacturer {
+    composes: block;
+}
+
+.property {
+    composes: block;
+}
+
+.price {
+    composes: block;
+    font-size: 20px;
+}
